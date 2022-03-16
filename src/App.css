@@ -1,38 +1,156 @@
 .App {
+  font-family: monospace;
   text-align: center;
+  font-size: 10px;
+  font-weight: 500;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
+  padding-top: 5rem;
   flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex_center {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai_fs {
+  align-items: center;
+}
+
+.jc_c {
+  justify-content: center;
+}
+
+.block {
+  width: 66%;
+  height: 100vh;
+  font-size: 1.5em;
+  margin-top: 50px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: rgb(245, 245, 245);
+  border-radius: 8px;
+}
+
+.block h2 {
+  margin-top: 0;
+}
+
+.mt_0 {
+  margin-top: 0px;
+}
+
+.p_50 {
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+
+.bg_235 {
+  background-color: rgb(245, 245, 245);
+}
+
+.bg_245_08 {
+  background-color: rgba(245, 245, 245, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.c_150 {
+  color: rgb(150, 150, 150);
+}
+
+.c_blue {
+  color: blue;
+}
+
+.c_red {
+  color: red;
+}
+
+.c_green {
+  color: green;
+}
+
+.c_black {
+  color: black;
+}
+
+.boxsh_3 {
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+/* .anim{
+    height:100vh;
+    width: 100vw;
+} */
+.line {
+  width: 100%;
+  max-width: 800px;
+  height: 10px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(230, 42, 42);
+}
+#main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.test-box1{
+  display: flex;
+  height: 250px;
+  width: 250px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(15, 150, 60);
+}
+.test-box2{
+  display: flex;
+  height: 250px;
+  width: 250px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(15, 150, 60);
+}
+.basic{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction:column;
+  min-height:100vh;
+}
+.box{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(15, 150, 60);
+}
+.exit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: bold;
+  flex-wrap: wrap;
 }
