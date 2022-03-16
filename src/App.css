@@ -99,7 +99,7 @@
   margin: 0 0 10px 0;
   position: relative;
   display: inline-block;
-  background-color: rgb(148, 142, 142);
+  background-color: rgb(221, 221, 221);
 }
 #main{
   display: flex;
@@ -129,7 +129,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding-bottom: 30rem;
+  padding-bottom: 80rem;
   flex-direction:column;
   min-height:100vh;
 }

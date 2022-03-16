@@ -14,7 +14,7 @@ function LocomotiveScrollAnim() {
               // id: "child",
               trigger: ".basic",
               start: "top 100%",
-              end:"top 50%",
+              end:"top top",
               scroller: "#smooth-scroll",
               scrub: true,
               pin:'#trigger',
@@ -43,7 +43,7 @@ function LocomotiveScrollAnim() {
         <div id="trigger" ref={pinRef} className={style.lococontainer} >//container
           <div className={style.loco}>
           <span class="line line-1"></span>
-            <h2>section with locoscroll implemented with gsap</h2>
+            <h2>Pinned section with locoscroll implemented with gsap</h2>
           </div>
         </div>
       );
