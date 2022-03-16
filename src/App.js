@@ -6,6 +6,7 @@ import './locomotive-scroll.css'
 import ScrollTrigger from "gsap/ScrollTrigger"
 import Home from './components/home';
 import ScrollTriggerAnim from './components/scrollTrigger';
+import LocomotiveScrollAnim from './components/LocoScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 function App() {
@@ -14,7 +15,9 @@ function App() {
     <div className="App" id='smooth-scroll'>
       <div className='container'>
         <Home/>
+        <LocomotiveScrollAnim/>
         <ScrollTriggerAnim/>
+        
       </div>
       
     </div>

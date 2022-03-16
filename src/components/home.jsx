@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './home.module.css'
-import logo from '../logo.svg'
 function Home() {
   return (
     <div className={styles.home}>
@@ -8,6 +7,7 @@ function Home() {
         <h2>
             This is the basic page with just smooth scroll enabled and basic gsap animation
         </h2>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg'/>
         </div>
   )
 }

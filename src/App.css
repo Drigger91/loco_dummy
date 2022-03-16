@@ -6,7 +6,7 @@
 }
 .container{
   display: flex;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   flex-direction: column;
   flex-wrap:wrap;
   justify-content: center;
@@ -16,6 +16,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.line {
+  width: 100%;
+  max-width: 800px;
+  height: 10px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(230, 42, 42);
 }
 
 .col {
@@ -31,18 +40,7 @@
   justify-content: center;
 }
 
-.block {
-  width: 66%;
-  height: 100vh;
-  font-size: 1.5em;
-  margin-top: 50px;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
-  background-color: rgb(245, 245, 245);
-  border-radius: 8px;
-}
+
 
 .block h2 {
   margin-top: 0;
@@ -97,12 +95,11 @@
 } */
 .line {
   width: 100%;
-  max-width: 800px;
   height: 10px;
   margin: 0 0 10px 0;
   position: relative;
   display: inline-block;
-  background-color: rgb(230, 42, 42);
+  background-color: rgb(148, 142, 142);
 }
 #main{
   display: flex;
@@ -132,6 +129,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding-bottom: 30rem;
   flex-direction:column;
   min-height:100vh;
 }
