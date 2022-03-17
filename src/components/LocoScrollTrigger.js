@@ -12,7 +12,7 @@ function LocomotiveScrollAnim() {
             backgroundColor: "rgb(150,200,75)",
             scrollTrigger: {
               // id: "child",
-              trigger: ".basic",
+              trigger: "#trigger3",
               start: "top 100%",
               end:"top top",
               scroller: "#smooth-scroll",

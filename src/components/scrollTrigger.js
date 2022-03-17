@@ -22,8 +22,8 @@ function ScrollTriggerAnim() {
         scrollTrigger: {
           trigger: "#box3",
           scroller: "#smooth-scroll",
-          toggleActions: "restart pause reverse pause",
-        },
+          toggleActions: "play reverse resume play",
+        }
       })
       .to(boxRef.current, { x: 400, duration: 3, rotation: "+=360" })
       .to(boxRef.current, { backgroundColor: "blue", color: "white" })

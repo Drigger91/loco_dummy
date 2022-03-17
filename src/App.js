@@ -8,6 +8,8 @@ import Home from './components/home';
 import ScrollTriggerAnim from './components/scrollTrigger';
 import LocomotiveScrollAnim from './components/LocoScrollTrigger';
 import LocoBasic from './components/LocoBasic';
+import Pinned from './components/pinned';
+import Done from './components/done';
 
 gsap.registerPlugin(ScrollTrigger);
 function App() {
@@ -16,11 +18,11 @@ function App() {
     <div className="App" id='smooth-scroll'>
       <div className='container'>
         <Home/>
-        
         <LocoBasic/>
         <LocomotiveScrollAnim/>
+        <Pinned/>
         <ScrollTriggerAnim/>
-        
+       <Done/>
         
       </div>
       
