@@ -130,7 +130,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding-bottom: 60rem;
+  /* padding-bottom: 60rem; */
   flex-direction:column;
   min-height:100vh;
 }

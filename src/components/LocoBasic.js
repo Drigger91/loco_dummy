@@ -4,12 +4,12 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from './locoscroll.module.css'
 import useLocoScroll from '../useLocoScroll';
 function LocoBasic() {
+  useLocoScroll();
     useLayoutEffect(() => {
         setTimeout(() => {
           gsap.to("#trigger2", {
             backgroundColor: "orange",
             scrollTrigger: {
-              // id: "child",
               trigger: "#trigger2",
               start: "top bottom+=10%",
               scroller: "#smooth-scroll",
@@ -30,7 +30,7 @@ function LocoBasic() {
             transformOrigin: "bottom left",
             ease: "ease",
           });
-        });
+        },80);
         ScrollTrigger.refresh();
       }, []);
   return (

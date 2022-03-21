@@ -6,7 +6,6 @@ import style from "./locoscroll.module.css";
 gsap.registerPlugin(ScrollTrigger);
 function Pinned() {
   const pinRef = useRef();
-  useLocoScroll();
   useLayoutEffect(() => {
     setTimeout(() => {
       gsap.to("#trigger3", {
@@ -44,7 +43,7 @@ function Pinned() {
           0
         )
         .to("#trigger3", { backgroundColor: "#28a92b" }, 0);
-    },100);
+    },80);
     ScrollTrigger.refresh();
   }, []);
 

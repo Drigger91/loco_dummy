@@ -6,8 +6,8 @@ function Home() {
   useLocoScroll();
   useLayoutEffect(()=>{
     setTimeout(() => {
-      gsap.to('.image',{x:200,scrollTrigger:{trigger:".image", scroller:"#smooth-scroll"} , duration:8,rotation:"+=360"})
-    }, 100);
+      gsap.to('.image',{x:200  ,duration:6,rotation:"+=360"})
+    }, 80);
   },[])
   return (
     <div className={styles.home}>

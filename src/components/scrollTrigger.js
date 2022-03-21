@@ -7,7 +7,7 @@ function ScrollTriggerAnim() {
   const boxRef = useRef();
   useLocoScroll();
   useLayoutEffect(() => {
-    setTimeout(() => {
+    setTimeout(()=>{
       gsap.to("#box2", {
         scrollTrigger: {
           trigger: "#box2",
@@ -26,13 +26,14 @@ function ScrollTriggerAnim() {
             toggleActions: "play reverse resume play",
           },
         })
-        .to(boxRef.current, { x: 400, duration: 3, rotation: "+=360" })
+        .to(boxRef.current, { x: 400,scrollTrigger:{ scroller:"#smooth-scroll" }, duration: 3, rotation: "+=360" })
         .to(boxRef.current, { backgroundColor: "blue", color: "white" })
-        .fromTo(boxRef.current, { x: 400 }, { x: 0, duration: 3 });
-    }, 100);
+        .fromTo(boxRef.current, { x: 400,scrollTrigger:{ scroller:"#smooth-scroll" }}, { x: 0,scrollTrigger:{ scroller:"#smooth-scroll" } , duration: 3});
+    },80)
+      
   }, []);
   return (
-    <div className="basic">
+    <div className="basic" id="basicid">
       <h1>Scroll Trigger gsap animations</h1>
       <div className="test-box2">
         <b>box 1</b>
