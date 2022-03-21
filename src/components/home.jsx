@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useLayoutEffect } from 'react'
 import styles from './home.module.css' 
+import useLocoScroll from '../useLocoScroll'
 import gsap from 'gsap'
 function Home() {
-  useEffect(()=>{
+  useLocoScroll();
+  useLayoutEffect(()=>{
     setTimeout(() => {
-      gsap.to('.image',{x:400,duration:8,rotation:"+=360"})
-    }, 1000);
+      gsap.to('.image',{x:200,scrollTrigger:{trigger:".image", scroller:"#smooth-scroll"} , duration:8,rotation:"+=360"})
+    }, 100);
   },[])
   return (
     <div className={styles.home}>

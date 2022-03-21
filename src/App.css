@@ -134,6 +134,11 @@
   flex-direction:column;
   min-height:100vh;
 }
+@media screen and (max-width:968px){
+  .basic{
+    padding-bottom:10rem;
+  }
+}
 .box{
   display: flex;
   height: 200px;

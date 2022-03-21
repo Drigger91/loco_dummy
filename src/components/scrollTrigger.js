@@ -6,32 +6,34 @@ gsap.registerPlugin(ScrollTrigger);
 function ScrollTriggerAnim() {
   const boxRef = useRef();
   useLocoScroll();
-  useEffect(() => {
-    gsap.to("#box2", {
-      scrollTrigger: {
-        trigger: "#box2",
-        scroller: "#smooth-scroll",
-        toggleActions: "restart pause reverse pause",
-      },
-      x: 400,
-      duration: 3,
-      rotation: "+=360",
-    });
-    boxRef.current = gsap
-      .timeline({
+  useLayoutEffect(() => {
+    setTimeout(() => {
+      gsap.to("#box2", {
         scrollTrigger: {
-          trigger: "#box3",
+          trigger: "#box2",
           scroller: "#smooth-scroll",
-          toggleActions: "play reverse resume play",
-        }
-      })
-      .to(boxRef.current, { x: 400, duration: 3, rotation: "+=360" })
-      .to(boxRef.current, { backgroundColor: "blue", color: "white" })
-      .fromTo(boxRef.current, { x: 400 }, { x: 0, duration: 3 });
+          toggleActions: "restart pause reverse pause",
+        },
+        x: 400,
+        duration: 3,
+        rotation: "+=360",
+      });
+      boxRef.current = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#box3",
+            scroller: "#smooth-scroll",
+            toggleActions: "play reverse resume play",
+          },
+        })
+        .to(boxRef.current, { x: 400, duration: 3, rotation: "+=360" })
+        .to(boxRef.current, { backgroundColor: "blue", color: "white" })
+        .fromTo(boxRef.current, { x: 400 }, { x: 0, duration: 3 });
+    }, 100);
   }, []);
   return (
     <div className="basic">
-        <h1>Scroll Trigger gsap animations</h1>
+      <h1>Scroll Trigger gsap animations</h1>
       <div className="test-box2">
         <b>box 1</b>
       </div>{" "}

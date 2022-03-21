@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef ,useLayoutEffect} from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import useLocoScroll from "../useLocoScroll";
@@ -6,7 +6,8 @@ import style from "./locoscroll.module.css";
 gsap.registerPlugin(ScrollTrigger);
 function Pinned() {
   const pinRef = useRef();
-  useEffect(() => {
+  useLocoScroll();
+  useLayoutEffect(() => {
     setTimeout(() => {
       gsap.to("#trigger3", {
         backgroundColor: "rgb(150,200,175)",
@@ -43,7 +44,7 @@ function Pinned() {
           0
         )
         .to("#trigger3", { backgroundColor: "#28a92b" }, 0);
-    });
+    },100);
     ScrollTrigger.refresh();
   }, []);
 

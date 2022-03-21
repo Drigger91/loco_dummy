@@ -1,11 +1,11 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useLayoutEffect} from 'react'
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from './locoscroll.module.css'
+import useLocoScroll from '../useLocoScroll';
 function LocoBasic() {
-    useEffect(() => {
+    useLayoutEffect(() => {
         setTimeout(() => {
-          
           gsap.to("#trigger2", {
             backgroundColor: "orange",
             scrollTrigger: {
