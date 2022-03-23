@@ -11,7 +11,6 @@ function Pinned() {
       gsap.to("#trigger3", {
         backgroundColor: "rgb(150,200,175)",
         scrollTrigger: {
-          // id: "child",
           trigger: ".basic",
           start: "top 100%",
           end: "top top",

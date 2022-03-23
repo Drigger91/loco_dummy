@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import { useEffect } from "react";
 import "./App.css";
 import useLocoScroll from "./useLocoScroll";
 import gsap from "gsap";

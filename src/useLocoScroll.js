@@ -4,7 +4,6 @@ import { useEffect, useLayoutEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
-
 export default function useLocoScroll() {
   useLayoutEffect(() => {
     setTimeout(() => {
